@@ -1,0 +1,113 @@
+{
+  "file": "depenses-culturelles-des-communes-total-2023.xlsx",
+  "sheet": "2023",
+  "columns": 15,
+  "rows": 3255,
+  "proposals": [
+    {
+      "name": "annee",
+      "semantic_type": "year",
+      "reference": null,
+      "role": "dimension",
+      "confidence": 1.0
+    },
+    {
+      "name": "siret",
+      "semantic_type": "siret",
+      "reference": "fr:siret",
+      "role": "code",
+      "confidence": 1.0
+    },
+    {
+      "name": "siren",
+      "semantic_type": "siren",
+      "reference": "fr:siren",
+      "role": "code",
+      "confidence": 1.0
+    },
+    {
+      "name": "nom_commune",
+      "semantic_type": "text",
+      "reference": "fr:cog_commune_insee",
+      "role": "label",
+      "confidence": 0.6
+    },
+    {
+      "name": "code_insee",
+      "semantic_type": "cog_commune_insee",
+      "reference": "fr:cog_commune_insee",
+      "role": "code",
+      "confidence": 1.0
+    },
+    {
+      "name": "depenses_culturelles_totales_keur",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "confidence": 1.0
+    },
+    {
+      "name": "depenses_culturelles_fonctionnement_keur",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "confidence": 1.0
+    },
+    {
+      "name": "depenses_culturelles_investissement_keur",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "confidence": 1.0
+    },
+    {
+      "name": "depenses_culturelles_totales_euros_par_habitant",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "confidence": 1.0
+    },
+    {
+      "name": "depenses_culturelles_fonctionnement_euros_par_habitant",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "confidence": 1.0
+    },
+    {
+      "name": "depenses_culturelles_investissement_euros_par_habitant",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "confidence": 1.0
+    },
+    {
+      "name": "depenses_culturelles_totales_pct",
+      "semantic_type": "number",
+      "reference": null,
+      "role": "measure",
+      "confidence": 1.0
+    },
+    {
+      "name": "depenses_culturelles_fonctionnement_pct",
+      "semantic_type": "number",
+      "reference": null,
+      "role": "measure",
+      "confidence": 1.0
+    },
+    {
+      "name": "depenses_culturelles_investissement_pct",
+      "semantic_type": "number",
+      "reference": null,
+      "role": "measure",
+      "confidence": 1.0
+    },
+    {
+      "name": "population_2023",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "confidence": 1.0
+    }
+  ]
+}

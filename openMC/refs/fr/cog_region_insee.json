@@ -1,0 +1,27 @@
+{
+  "id": "fr:cog_region_insee",
+  "label": "Région (COG INSEE)",
+  "description": "Code région COG (2 chiffres). Conserver en chaîne.",
+  "type": "string",
+  "normalize": ["strip", "digits_only", "zfill:2"],
+  "validate": {
+    "pattern": "^\\d{2}$"
+  },
+  "detect": {
+    "label_keywords": [
+      "code_region",
+      "region_code",
+      "reg_code",
+      "numero_region",
+      "num_region"
+    ],
+    "negative_keywords": [
+      "nom",
+      "libelle",
+      "label",
+      "intitule",
+      "region_nom",
+      "nom_region"
+    ]
+  }
+}

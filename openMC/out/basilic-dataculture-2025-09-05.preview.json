@@ -1,0 +1,393 @@
+{
+  "file": "basilic-dataculture-2025-09-05.xlsx",
+  "sheet": "Sheet 1",
+  "columns": 55,
+  "rows": 88037,
+  "proposals": [
+    {
+      "name": "source",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "nom",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "adresse",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "complement_adresse",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "code_postal",
+      "semantic_type": "code_postal",
+      "reference": "fr:code_postal",
+      "role": "code",
+      "confidence": 1.0
+    },
+    {
+      "name": "libelle_geographique",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "label",
+      "confidence": 0.0
+    },
+    {
+      "name": "code_insee",
+      "semantic_type": "cog_commune_insee",
+      "reference": "fr:cog_commune_insee",
+      "role": "code",
+      "confidence": 1.0
+    },
+    {
+      "name": "code_insee_arrondt",
+      "semantic_type": "cog_departement_insee",
+      "reference": "fr:cog_departement_insee",
+      "role": "code",
+      "confidence": 0.9781924025878046
+    },
+    {
+      "name": "identifiant_origine",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "type_equipement_ou_lieu",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "label_et_appellation",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "label",
+      "confidence": 0.0
+    },
+    {
+      "name": "region",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "domaine",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "sous_domaine",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "archeologie_detail",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "adresse_postale",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "departement",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "precision_equipement",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "n_departement",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "confidence": 0.9925137456263916
+    },
+    {
+      "name": "n_region",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "confidence": 1.0
+    },
+    {
+      "name": "fonction_1",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "fonction_2",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "fonction_3",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "fonction_4",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "multiplexe",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "type_de_cinema",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "nombre_fauteuils_de_cinema",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "confidence": 1.0
+    },
+    {
+      "name": "nombre_ecrans",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "confidence": 1.0
+    },
+    {
+      "name": "nombre_de_salles_de_theatre",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "confidence": 1.0
+    },
+    {
+      "name": "organisme_siege_du_theatre",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "jauge_du_theatre",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "confidence": 0.9942528735632183
+    },
+    {
+      "name": "code_du_reseau_de_bibliotheques",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "code",
+      "confidence": 0.0
+    },
+    {
+      "name": "nom_du_reseau_de_bibliotheques",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "label",
+      "confidence": 0.0
+    },
+    {
+      "name": "nom_de_lillustre",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "label",
+      "confidence": 0.0
+    },
+    {
+      "name": "surface_bibliotheque",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "rang",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "confidence": 1.0
+    },
+    {
+      "name": "ident",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "identifiant_deps_a_partir_de_2022",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "libelle_epci",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "label",
+      "confidence": 0.0
+    },
+    {
+      "name": "code_insee_epci",
+      "semantic_type": "siren",
+      "reference": "fr:siren",
+      "role": "code",
+      "confidence": 1.0
+    },
+    {
+      "name": "identifiant_deps_old",
+      "semantic_type": "siren",
+      "reference": "fr:siren",
+      "role": "unknown",
+      "confidence": 0.9926415636677206
+    },
+    {
+      "name": "precision_protection_sites_et_monuments",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "gcd",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "aav",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "annee_label_appellation",
+      "semantic_type": "year",
+      "reference": null,
+      "role": "dimension",
+      "confidence": 0.9935631229235881
+    },
+    {
+      "name": "latitude",
+      "semantic_type": "number",
+      "reference": null,
+      "role": "measure",
+      "confidence": 1.0
+    },
+    {
+      "name": "longitude",
+      "semantic_type": "number",
+      "reference": null,
+      "role": "measure",
+      "confidence": 0.9999886411395209
+    },
+    {
+      "name": "demographie_ap",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "demographie_detail_entree",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "demographie_detail_sortie",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "multi_equipements",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "identifiant_qpv_24",
+      "semantic_type": "code_postal",
+      "reference": "fr:code_postal",
+      "role": "unknown",
+      "confidence": 0.9967637540453075
+    },
+    {
+      "name": "identifiant_qpv_15",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    },
+    {
+      "name": "iris",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "confidence": 0.9925545600473594
+    },
+    {
+      "name": "coordonnees_geo",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "confidence": 0.0
+    }
+  ]
+}

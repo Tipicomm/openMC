@@ -1,0 +1,675 @@
+{
+  "source": "inbox/basilic-dataculture-2025-09-05.xlsx",
+  "sheet": "Sheet 1",
+  "dialect": {
+    "delimiter": ";",
+    "encoding": "utf-8",
+    "lineTerminator": "\n"
+  },
+  "options": {
+    "invalid_policy": "blank_and_report",
+    "normalize_headers": true
+  },
+  "fields": [
+    {
+      "source_name": "Source",
+      "name": "source",
+      "label": "Source",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Nom",
+      "name": "nom",
+      "label": "Nom",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Adresse",
+      "name": "adresse",
+      "label": "Adresse",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Complement_Adresse",
+      "name": "complement_adresse",
+      "label": "Complement_Adresse",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Code_Postal",
+      "name": "code_postal",
+      "label": "Code_Postal",
+      "semantic_type": "code_postal",
+      "reference": "fr:code_postal",
+      "role": "code",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "libelle_geographique",
+      "name": "libelle_geographique",
+      "label": "libelle_geographique",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "label",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "code_insee",
+      "name": "code_insee",
+      "label": "code_insee",
+      "semantic_type": "cog_commune_insee",
+      "reference": "fr:cog_commune_insee",
+      "role": "code",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "Code_Insee_Arrondt",
+      "name": "code_insee_arrondt",
+      "label": "Code_Insee_Arrondt",
+      "semantic_type": "cog_departement_insee",
+      "reference": "fr:cog_departement_insee",
+      "role": "code",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.9781924025878046
+      }
+    },
+    {
+      "source_name": "Identifiant_origine",
+      "name": "identifiant_origine",
+      "label": "Identifiant_origine",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Type_equipement_ou_lieu",
+      "name": "type_equipement_ou_lieu",
+      "label": "Type_equipement_ou_lieu",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Label_et_appellation",
+      "name": "label_et_appellation",
+      "label": "Label_et_appellation",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "label",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Region",
+      "name": "region",
+      "label": "Region",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Domaine",
+      "name": "domaine",
+      "label": "Domaine",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Sous_domaine",
+      "name": "sous_domaine",
+      "label": "Sous_domaine",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Archeologie_detail",
+      "name": "archeologie_detail",
+      "label": "Archeologie_detail",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Adresse_postale",
+      "name": "adresse_postale",
+      "label": "Adresse_postale",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Departement",
+      "name": "departement",
+      "label": "Departement",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Precision_equipement",
+      "name": "precision_equipement",
+      "label": "Precision_equipement",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "N_Departement",
+      "name": "n_departement",
+      "label": "N_Departement",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.9925137456263916
+      }
+    },
+    {
+      "source_name": "N_Region",
+      "name": "n_region",
+      "label": "N_Region",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "Fonction_1",
+      "name": "fonction_1",
+      "label": "Fonction_1",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Fonction_2",
+      "name": "fonction_2",
+      "label": "Fonction_2",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Fonction_3",
+      "name": "fonction_3",
+      "label": "Fonction_3",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Fonction_4",
+      "name": "fonction_4",
+      "label": "Fonction_4",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Multiplexe",
+      "name": "multiplexe",
+      "label": "Multiplexe",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Type_de_cinema",
+      "name": "type_de_cinema",
+      "label": "Type_de_cinema",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Nombre_fauteuils_de_cinema",
+      "name": "nombre_fauteuils_de_cinema",
+      "label": "Nombre_fauteuils_de_cinema",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "Nombre_ecrans",
+      "name": "nombre_ecrans",
+      "label": "Nombre_ecrans",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "Nombre_de_salles_de_theatre",
+      "name": "nombre_de_salles_de_theatre",
+      "label": "Nombre_de_salles_de_theatre",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "Organisme_Siege_du_theatre",
+      "name": "organisme_siege_du_theatre",
+      "label": "Organisme_Siege_du_theatre",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Jauge_du_theatre",
+      "name": "jauge_du_theatre",
+      "label": "Jauge_du_theatre",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.9942528735632183
+      }
+    },
+    {
+      "source_name": "Code_du_reseau_de_Bibliotheques",
+      "name": "code_du_reseau_de_bibliotheques",
+      "label": "Code_du_reseau_de_Bibliotheques",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "code",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Nom_du_Reseau_de_Bibliotheques",
+      "name": "nom_du_reseau_de_bibliotheques",
+      "label": "Nom_du_Reseau_de_Bibliotheques",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "label",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Nom_de_l'Illustre",
+      "name": "nom_de_lillustre",
+      "label": "Nom_de_l'Illustre",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "label",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Surface_Bibliotheque",
+      "name": "surface_bibliotheque",
+      "label": "Surface_Bibliotheque",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Rang",
+      "name": "rang",
+      "label": "Rang",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "Ident",
+      "name": "ident",
+      "label": "Ident",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Identifiant_deps_a_partir_de_2022",
+      "name": "identifiant_deps_a_partir_de_2022",
+      "label": "Identifiant_deps_a_partir_de_2022",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Libelle_EPCI",
+      "name": "libelle_epci",
+      "label": "Libelle_EPCI",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "label",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Code_Insee_EPCI",
+      "name": "code_insee_epci",
+      "label": "Code_Insee_EPCI",
+      "semantic_type": "siren",
+      "reference": "fr:siren",
+      "role": "code",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "Identifiant_deps_old",
+      "name": "identifiant_deps_old",
+      "label": "Identifiant_deps_old",
+      "semantic_type": "siren",
+      "reference": "fr:siren",
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.9926415636677206
+      }
+    },
+    {
+      "source_name": "Precision_protection_sites_et_monuments",
+      "name": "precision_protection_sites_et_monuments",
+      "label": "Precision_protection_sites_et_monuments",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "GCD",
+      "name": "gcd",
+      "label": "GCD",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "AAV",
+      "name": "aav",
+      "label": "AAV",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Annee_Label_Appellation",
+      "name": "annee_label_appellation",
+      "label": "Annee_Label_Appellation",
+      "semantic_type": "year",
+      "reference": null,
+      "role": "dimension",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.9935631229235881
+      }
+    },
+    {
+      "source_name": "Latitude",
+      "name": "latitude",
+      "label": "Latitude",
+      "semantic_type": "number",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "Longitude",
+      "name": "longitude",
+      "label": "Longitude",
+      "semantic_type": "number",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.9999886411395209
+      }
+    },
+    {
+      "source_name": "Demographie_AP",
+      "name": "demographie_ap",
+      "label": "Demographie_AP",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Demographie_detail_entree",
+      "name": "demographie_detail_entree",
+      "label": "Demographie_detail_entree",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Demographie_detail_sortie",
+      "name": "demographie_detail_sortie",
+      "label": "Demographie_detail_sortie",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Multi_equipements",
+      "name": "multi_equipements",
+      "label": "Multi_equipements",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "identifiant_QPV_24",
+      "name": "identifiant_qpv_24",
+      "label": "identifiant_QPV_24",
+      "semantic_type": "code_postal",
+      "reference": "fr:code_postal",
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.9967637540453075
+      }
+    },
+    {
+      "source_name": "identifiant_QPV_15",
+      "name": "identifiant_qpv_15",
+      "label": "identifiant_QPV_15",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    },
+    {
+      "source_name": "Iris",
+      "name": "iris",
+      "label": "Iris",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.9925545600473594
+      }
+    },
+    {
+      "source_name": "coordonnees_geo",
+      "name": "coordonnees_geo",
+      "label": "coordonnees_geo",
+      "semantic_type": "text",
+      "reference": null,
+      "role": "unknown",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.0
+      }
+    }
+  ]
+}

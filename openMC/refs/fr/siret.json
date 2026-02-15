@@ -1,0 +1,24 @@
+{
+  "id": "fr:siret",
+  "label": "SIRET",
+  "description": "Identifiant établissement (14 chiffres). Conserver en chaîne.",
+  "type": "string",
+  "normalize": ["strip", "digits_only", "zfill:14"],
+  "validate": {
+    "pattern": "^\\d{14}$"
+  },
+  "detect": {
+    "label_keywords": [
+      "siret",
+      "id_etablissement",
+      "id_etab",
+      "etablissement_id"
+    ],
+    "negative_keywords": [
+      "nom",
+      "libelle",
+      "label",
+      "intitule"
+    ]
+  }
+}

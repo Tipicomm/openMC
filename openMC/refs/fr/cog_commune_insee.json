@@ -1,0 +1,27 @@
+{
+  "id": "fr:cog_commune_insee",
+  "label": "Commune (COG INSEE)",
+  "description": "Code commune INSEE (5 caractères). Conserver en chaîne.",
+  "type": "string",
+  "normalize": ["strip", "digits_only", "zfill:5"],
+  "validate": {
+    "pattern": "^\\d{5}$"
+  },
+  "detect": {
+    "label_keywords": [
+      "code_insee",
+      "code_commune",
+      "commune_code",
+      "codgeo",
+      "code_commune_insee"
+    ],
+    "negative_keywords": [
+      "nom",
+      "libelle",
+      "label",
+      "intitule",
+      "commune_nom",
+      "nom_commune"
+    ]
+  }
+}

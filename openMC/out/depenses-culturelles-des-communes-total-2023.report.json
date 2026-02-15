@@ -1,0 +1,92 @@
+[
+  {
+    "column": "annee",
+    "role": "dimension",
+    "semantic_type": "year",
+    "errors": 0
+  },
+  {
+    "column": "siret",
+    "role": "code",
+    "semantic_type": "siret",
+    "errors": 0
+  },
+  {
+    "column": "siren",
+    "role": "code",
+    "semantic_type": "siren",
+    "errors": 0
+  },
+  {
+    "column": "nom_commune",
+    "role": "label",
+    "semantic_type": "text",
+    "errors": 0
+  },
+  {
+    "column": "code_insee",
+    "role": "code",
+    "semantic_type": "cog_commune_insee",
+    "errors": 16
+  },
+  {
+    "column": "depenses_culturelles_totales_keur",
+    "role": "measure",
+    "semantic_type": "integer",
+    "errors": 0
+  },
+  {
+    "column": "depenses_culturelles_fonctionnement_keur",
+    "role": "measure",
+    "semantic_type": "integer",
+    "errors": 0
+  },
+  {
+    "column": "depenses_culturelles_investissement_keur",
+    "role": "measure",
+    "semantic_type": "integer",
+    "errors": 0
+  },
+  {
+    "column": "depenses_culturelles_totales_euros_par_habitant",
+    "role": "measure",
+    "semantic_type": "integer",
+    "errors": 0
+  },
+  {
+    "column": "depenses_culturelles_fonctionnement_euros_par_habitant",
+    "role": "measure",
+    "semantic_type": "integer",
+    "errors": 0
+  },
+  {
+    "column": "depenses_culturelles_investissement_euros_par_habitant",
+    "role": "measure",
+    "semantic_type": "integer",
+    "errors": 0
+  },
+  {
+    "column": "depenses_culturelles_totales",
+    "role": "measure",
+    "semantic_type": "number",
+    "errors": 0
+  },
+  {
+    "column": "depenses_culturelles_fonctionnement",
+    "role": "measure",
+    "semantic_type": "number",
+    "errors": 0
+  },
+  {
+    "column": "depenses_culturelles_investissement",
+    "role": "measure",
+    "semantic_type": "number",
+    "errors": 0
+  },
+  {
+    "column": "population_2023",
+    "role": "measure",
+    "semantic_type": "integer",
+    "errors": 0
+  }
+]

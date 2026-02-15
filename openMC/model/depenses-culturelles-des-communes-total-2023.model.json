@@ -1,0 +1,195 @@
+{
+  "source": "inbox/depenses-culturelles-des-communes-total-2023.xlsx",
+  "sheet": "2023",
+  "dialect": {
+    "delimiter": ";",
+    "encoding": "utf-8",
+    "lineTerminator": "\n"
+  },
+  "options": {
+    "invalid_policy": "blank_and_report",
+    "normalize_headers": true
+  },
+  "fields": [
+    {
+      "source_name": "Année",
+      "name": "annee",
+      "label": "Année",
+      "semantic_type": "year",
+      "reference": null,
+      "role": "dimension",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "Siret",
+      "name": "siret",
+      "label": "Siret",
+      "semantic_type": "siret",
+      "reference": "fr:siret",
+      "role": "code",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "Siren",
+      "name": "siren",
+      "label": "Siren",
+      "semantic_type": "siren",
+      "reference": "fr:siren",
+      "role": "code",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "Nom_commune",
+      "name": "nom_commune",
+      "label": "Nom_commune",
+      "semantic_type": "text",
+      "reference": "fr:cog_commune_insee",
+      "role": "label",
+      "nullable": true,
+      "notes": {
+        "confidence": 0.6
+      }
+    },
+    {
+      "source_name": "Code_Insee",
+      "name": "code_insee",
+      "label": "Code_Insee",
+      "semantic_type": "cog_commune_insee",
+      "reference": "fr:cog_commune_insee",
+      "role": "code",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "Depenses_culturelles_totales (K€)",
+      "name": "depenses_culturelles_totales_keur",
+      "label": "Depenses_culturelles_totales (K€)",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "Depenses_culturelles_fonctionnement (K€)",
+      "name": "depenses_culturelles_fonctionnement_keur",
+      "label": "Depenses_culturelles_fonctionnement (K€)",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "Depenses_culturelles_investissement (K€)",
+      "name": "depenses_culturelles_investissement_keur",
+      "label": "Depenses_culturelles_investissement (K€)",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "Depenses_culturelles_totales euros par habitant",
+      "name": "depenses_culturelles_totales_euros_par_habitant",
+      "label": "Depenses_culturelles_totales euros par habitant",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "Depenses_culturelles_fonctionnement euros par habitant",
+      "name": "depenses_culturelles_fonctionnement_euros_par_habitant",
+      "label": "Depenses_culturelles_fonctionnement euros par habitant",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "Depenses_culturelles_investissement euros par habitant",
+      "name": "depenses_culturelles_investissement_euros_par_habitant",
+      "label": "Depenses_culturelles_investissement euros par habitant",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "% Depenses_culturelles_totales",
+      "name": "depenses_culturelles_totales_pct",
+      "label": "% Depenses_culturelles_totales",
+      "semantic_type": "number",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "% Depenses_culturelles_fonctionnement",
+      "name": "depenses_culturelles_fonctionnement_pct",
+      "label": "% Depenses_culturelles_fonctionnement",
+      "semantic_type": "number",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "% Depenses_culturelles_investissement",
+      "name": "depenses_culturelles_investissement_pct",
+      "label": "% Depenses_culturelles_investissement",
+      "semantic_type": "number",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_name": "Population 2023",
+      "name": "population_2023",
+      "label": "Population 2023",
+      "semantic_type": "integer",
+      "reference": null,
+      "role": "measure",
+      "nullable": true,
+      "notes": {
+        "confidence": 1.0
+      }
+    }
+  ]
+}

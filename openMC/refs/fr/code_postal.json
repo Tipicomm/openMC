@@ -1,0 +1,27 @@
+{
+  "id": "fr:code_postal",
+  "label": "Code postal (France)",
+  "description": "Code postal France (5 chiffres). Conserver en chaîne.",
+  "type": "string",
+  "normalize": ["strip", "digits_only", "zfill:5"],
+  "validate": {
+    "pattern": "^\\d{5}$"
+  },
+  "detect": {
+    "label_keywords": [
+      "code_postal",
+      "cp",
+      "postal_code",
+      "zipcode",
+      "zip"
+    ],
+    "negative_keywords": [
+      "insee",
+      "commune",
+      "departement",
+      "region",
+      "nom",
+      "libelle"
+    ]
+  }
+}

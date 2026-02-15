@@ -1,0 +1,24 @@
+{
+  "id": "fr:siren",
+  "label": "SIREN",
+  "description": "Identifiant entreprise (9 chiffres). Conserver en chaîne.",
+  "type": "string",
+  "normalize": ["strip", "digits_only", "zfill:9"],
+  "validate": {
+    "pattern": "^\\d{9}$"
+  },
+  "detect": {
+    "label_keywords": [
+      "siren",
+      "id_entreprise",
+      "entreprise_id",
+      "societe_id"
+    ],
+    "negative_keywords": [
+      "nom",
+      "libelle",
+      "label",
+      "intitule"
+    ]
+  }
+}

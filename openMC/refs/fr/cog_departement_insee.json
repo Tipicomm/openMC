@@ -1,0 +1,29 @@
+{
+  "id": "fr:cog_departement_insee",
+  "label": "Département (COG INSEE)",
+  "description": "Code département COG (2 ou 3 caractères : 75, 075, 2A, 971). Conserver en chaîne.",
+  "type": "string",
+  "normalize": ["strip", "upper", "remove_spaces"],
+  "validate": {
+    "pattern": "^(\\d{2}|\\d{3}|2A|2B|97\\d)$"
+  },
+  "detect": {
+    "label_keywords": [
+      "code_departement",
+      "departement_code",
+      "department_code",
+      "num_departement",
+      "numero_departement",
+      "dep_code",
+      "cd_dep"
+    ],
+    "negative_keywords": [
+      "nom",
+      "libelle",
+      "label",
+      "intitule",
+      "departement_nom",
+      "nom_departement"
+    ]
+  }
+}

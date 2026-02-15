@@ -1,0 +1,10 @@
+{
+  "input": "/Users/eudespeyrerof/Documents/openMC/inbox/depenses-culturelles-des-communes-total-2023.xlsx",
+  "sheet": "2023",
+  "output_csv": "/Users/eudespeyrerof/Documents/openMC/out/depenses-culturelles-des-communes-total-2023.clean.csv",
+  "issues": 0,
+  "percent_output": "0_100",
+  "percent_decimals": 1,
+  "number_max_decimals": 6,
+  "format_numbers_as_text": true
+}
