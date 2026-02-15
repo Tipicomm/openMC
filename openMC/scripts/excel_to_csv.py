@@ -24,6 +24,16 @@ def find_project_root(start: Path) -> Path:
     return Path.cwd().resolve()
 
 
+def read_json_robust(path: Path) -> dict[str, Any]:
+    """
+    Lecture robuste JSON: utf-8 puis fallback utf-8-sig (BOM).
+    """
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except UnicodeDecodeError:
+        return json.loads(path.read_text(encoding="utf-8-sig"))
+
+
 def normalize_for_detection(series: pd.Series) -> pd.Series:
     s = series.dropna().astype(str).str.strip()
     s = s[s != ""]
@@ -47,8 +57,8 @@ def apply_normalize_steps(values: pd.Series, steps: list[str]) -> pd.Series:
             s = s.str.replace(r"\D+", "", regex=True)
         elif isinstance(step, str) and step.startswith("zfill:"):
             n = int(step.split(":", 1)[1])
-            s = s.str.zfill(n)
-
+            # Ne pas appliquer zfill sur valeurs vides
+            s = s.where(s.isna() | (s == ""), s.str.zfill(n))
     s = s.replace({"": pd.NA, "nan": pd.NA, "None": pd.NA})
     return s
 
@@ -66,7 +76,7 @@ def load_ref(project_root: Path, ref_id: str) -> dict[str, Any] | None:
     p = project_root / "refs" / "fr" / f"{name}.json"
     if not p.exists():
         return None
-    return json.loads(p.read_text(encoding="utf-8"))
+    return read_json_robust(p)
 
 
 # ---------------------------
@@ -92,9 +102,7 @@ def parse_number_fr(v: str) -> float | None:
     # si "12,34" -> point
     if "," in s and "." not in s:
         s = s.replace(",", ".")
-    # sinon on garde le point
 
-    # élimine tout sauf digits, ., +/-
     if not re.match(r"^[+-]?\d+(\.\d+)?$", s):
         return None
     try:
@@ -119,11 +127,8 @@ def parse_percentage(v: str) -> float | None:
 
     if s.endswith("%") or re.match(r"^[+-]?\d+(?:[.,]\d+)?\s*%$", s):
         s2 = s.replace("%", "").strip()
-        n = parse_number_fr(s2)
-        return n
+        return parse_number_fr(s2)
 
-    # sinon, si c'est un nombre <= 1.0 et que la colonne est "percentage",
-    # on suppose que c'est déjà une fraction Excel (0.104 => 10.4)
     n = parse_number_fr(s)
     if n is None:
         return None
@@ -140,7 +145,6 @@ def format_smart_number(x: float, decimal_sep: str, max_decimals: int = 6) -> st
     """
     if x is None:
         return ""
-    # on formatte en décimal fixe puis on strippe
     s = f"{x:.{max_decimals}f}"
     s = s.rstrip("0").rstrip(".")
     if decimal_sep == ",":
@@ -159,7 +163,7 @@ def main(model_path: str):
     if not model_file.exists():
         raise SystemExit(f"Model introuvable: {model_file}")
 
-    model = json.loads(model_file.read_text(encoding="utf-8"))
+    model = read_json_robust(model_file)
 
     source = model["source"]
     source_file = Path(source)
@@ -188,7 +192,7 @@ def main(model_path: str):
         out_name = f["name"]
         semantic = f.get("semantic_type", "text")
         reference = f.get("reference")
-        role = f.get("role")
+        role = f.get("role")  # "code" | "label" | "measure" | "dimension" | ...
 
         if source_name not in df.columns:
             out_cols[out_name] = pd.Series([pd.NA] * len(df), dtype="object")
@@ -196,8 +200,10 @@ def main(model_path: str):
 
         col = df[source_name].astype(str)
 
-        # 1) REF normalization (important pour code_insee => zfill)
-        if reference:
+        # 1) REF normalization
+        # IMPORTANT: on n'applique les normalize steps QUE sur les colonnes role=="code"
+        # sinon, les labels ("Nom_commune") partent en digits_only -> "" -> zfill -> "00000"
+        if reference and role == "code":
             ref = load_ref(project_root, reference)
             if ref:
                 steps = ref.get("normalize") or []
@@ -213,21 +219,22 @@ def main(model_path: str):
             continue
 
         if semantic == "integer":
-            # attention: on NE cast PAS les codes (ils devraient être string via refs)
-            # ici on suppose measure/int.
             vals = col.map(parse_number_fr)
             out_cols[out_name] = vals.map(lambda x: "" if x is None else str(int(round(x)))).astype("object")
             continue
 
         if semantic == "number":
             vals = col.map(parse_number_fr)
-            out_cols[out_name] = vals.map(lambda x: "" if x is None else format_smart_number(float(x), decimal_sep, max_decimals=6)).astype("object")
+            out_cols[out_name] = vals.map(
+                lambda x: "" if x is None else format_smart_number(float(x), decimal_sep, max_decimals=6)
+            ).astype("object")
             continue
 
         if semantic == "percentage":
             vals = col.map(parse_percentage)
-            # pourcentages: généralement 0-100 avec 0 à 1 décimale utile
-            out_cols[out_name] = vals.map(lambda x: "" if x is None else format_smart_number(float(x), decimal_sep, max_decimals=3)).astype("object")
+            out_cols[out_name] = vals.map(
+                lambda x: "" if x is None else format_smart_number(float(x), decimal_sep, max_decimals=3)
+            ).astype("object")
             continue
 
         # par défaut text
